@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:stopwatch/list.dart';
 
 class StopwatchScreen extends StatefulWidget {
   final String userName;
@@ -58,17 +57,17 @@ class _StopwatchScreenState extends State<StopwatchScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ListScreen(),
-                    ),
-                  );
-                },
-                child: const Text('View'),
-              ),
+              // ElevatedButton(
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(
+              //         builder: (context) => const ListScreen(),
+              //       ),
+              //     );
+              //   },
+              //   child: const Text('View'),
+              // ),
               const SizedBox(
                 height: 20,
               ),
@@ -99,17 +98,7 @@ class _StopwatchScreenState extends State<StopwatchScreen> {
                 ],
               ),
               const SizedBox(height: 20),
-              // ElevatedButton(
-              //   onPressed: () {
-              //     Navigator.push(
-              //       context,
-              //       MaterialPageRoute(
-              //         builder: (context) => const ListScreen(),
-              //       ),
-              //     );
-              //   },
-              //   child: const Text('Save'),
-              // ),
+
               const SizedBox(height: 10),
               Expanded(
                 child: ListView.builder(
